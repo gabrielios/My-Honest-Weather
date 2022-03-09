@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1529984B48C06276641664E1 /* Pods_My_Honest_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3BB349161F77D174881C33 /* Pods_My_Honest_Weather.framework */; };
+		4ABB6431D0EF2AA8CEF73ED8 /* Pods_My_Honest_WeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB30D349647F6666ACEFF1 /* Pods_My_Honest_WeatherTests.framework */; };
+		A36660768197E3BDEC70CFC7 /* Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E52DEACC1EAC9A40EC673B /* Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework */; };
+		C64EA20527D32EA8000ECCF9 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EA20427D32EA7000ECCF9 /* ForecastController.swift */; };
+		C64EA20727D330E2000ECCF9 /* HourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EA20627D330E2000ECCF9 /* HourlyTableViewCell.swift */; };
+		C6EC3CA327C68DD700CF51E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CA227C68DD700CF51E1 /* AppDelegate.swift */; };
+		C6EC3CA527C68DD700CF51E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CA427C68DD700CF51E1 /* SceneDelegate.swift */; };
+		C6EC3CA727C68DD700CF51E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CA627C68DD700CF51E1 /* ViewController.swift */; };
+		C6EC3CAA27C68DD700CF51E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EC3CA827C68DD700CF51E1 /* Main.storyboard */; };
+		C6EC3CAC27C68DDA00CF51E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EC3CAB27C68DDA00CF51E1 /* Assets.xcassets */; };
+		C6EC3CAF27C68DDA00CF51E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EC3CAD27C68DDA00CF51E1 /* LaunchScreen.storyboard */; };
+		C6EC3CBA27C68DDB00CF51E1 /* My_Honest_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CB927C68DDB00CF51E1 /* My_Honest_WeatherTests.swift */; };
+		C6EC3CC427C68DDB00CF51E1 /* My_Honest_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CC327C68DDB00CF51E1 /* My_Honest_WeatherUITests.swift */; };
+		C6EC3CC627C68DDB00CF51E1 /* My_Honest_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CC527C68DDB00CF51E1 /* My_Honest_WeatherUITestsLaunchTests.swift */; };
+		C6EC3CDB27C6907400CF51E1 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CDA27C6907400CF51E1 /* ForecastResponse.swift */; };
+		C6EC3CDD27C6939200CF51E1 /* FetchForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CDC27C6939200CF51E1 /* FetchForecast.swift */; };
+		C6EC3CDF27C696BD00CF51E1 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CDE27C696BD00CF51E1 /* ForecastModel.swift */; };
+		C6EC3CE127C6977700CF51E1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3CE027C6977700CF51E1 /* ForecastViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6EC3CB627C68DDB00CF51E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6EC3C9727C68DD700CF51E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6EC3C9E27C68DD700CF51E1;
+			remoteInfo = "My Honest Weather";
+		};
+		C6EC3CC027C68DDB00CF51E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6EC3C9727C68DD700CF51E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6EC3C9E27C68DD700CF51E1;
+			remoteInfo = "My Honest Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E3BB349161F77D174881C33 /* Pods_My_Honest_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Honest_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E52DEACC1EAC9A40EC673B /* Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5824167442958CAD690121 /* Pods-My Honest Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest Weather.debug.xcconfig"; path = "Target Support Files/Pods-My Honest Weather/Pods-My Honest Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		3D3FADB6B1ABC6FD863AF2E2 /* Pods-My Honest WeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest WeatherTests.debug.xcconfig"; path = "Target Support Files/Pods-My Honest WeatherTests/Pods-My Honest WeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DAB30D349647F6666ACEFF1 /* Pods_My_Honest_WeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Honest_WeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27CF74EC33439E659B72429 /* Pods-My Honest Weather-My Honest WeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest Weather-My Honest WeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-My Honest Weather-My Honest WeatherUITests/Pods-My Honest Weather-My Honest WeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C64EA20427D32EA7000ECCF9 /* ForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+		C64EA20627D330E2000ECCF9 /* HourlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyTableViewCell.swift; sourceTree = "<group>"; };
+		C64EA20827D34C5D000ECCF9 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		C6EC3C9F27C68DD700CF51E1 /* My Honest Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Honest Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EC3CA227C68DD700CF51E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6EC3CA427C68DD700CF51E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6EC3CA627C68DD700CF51E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6EC3CA927C68DD700CF51E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6EC3CAB27C68DDA00CF51E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6EC3CAE27C68DDA00CF51E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6EC3CB027C68DDA00CF51E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6EC3CB527C68DDB00CF51E1 /* My Honest WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Honest WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EC3CB927C68DDB00CF51E1 /* My_Honest_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Honest_WeatherTests.swift; sourceTree = "<group>"; };
+		C6EC3CBF27C68DDB00CF51E1 /* My Honest WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Honest WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EC3CC327C68DDB00CF51E1 /* My_Honest_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Honest_WeatherUITests.swift; sourceTree = "<group>"; };
+		C6EC3CC527C68DDB00CF51E1 /* My_Honest_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Honest_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6EC3CDA27C6907400CF51E1 /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		C6EC3CDC27C6939200CF51E1 /* FetchForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchForecast.swift; sourceTree = "<group>"; };
+		C6EC3CDE27C696BD00CF51E1 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		C6EC3CE027C6977700CF51E1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		E1B560B9BCE7E64EC30475ED /* Pods-My Honest Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest Weather.release.xcconfig"; path = "Target Support Files/Pods-My Honest Weather/Pods-My Honest Weather.release.xcconfig"; sourceTree = "<group>"; };
+		E547D32E87B9220F13C98482 /* Pods-My Honest WeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest WeatherTests.release.xcconfig"; path = "Target Support Files/Pods-My Honest WeatherTests/Pods-My Honest WeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2577F3EFA7469EB3031B209 /* Pods-My Honest Weather-My Honest WeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Honest Weather-My Honest WeatherUITests.debug.xcconfig"; path = "Target Support Files/Pods-My Honest Weather-My Honest WeatherUITests/Pods-My Honest Weather-My Honest WeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6EC3C9C27C68DD700CF51E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1529984B48C06276641664E1 /* Pods_My_Honest_Weather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CB227C68DDB00CF51E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABB6431D0EF2AA8CEF73ED8 /* Pods_My_Honest_WeatherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CBC27C68DDB00CF51E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36660768197E3BDEC70CFC7 /* Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		128AF47EEFE6F7A0954635FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E3BB349161F77D174881C33 /* Pods_My_Honest_Weather.framework */,
+				17E52DEACC1EAC9A40EC673B /* Pods_My_Honest_Weather_My_Honest_WeatherUITests.framework */,
+				4DAB30D349647F6666ACEFF1 /* Pods_My_Honest_WeatherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E774FD2BDFF7A9B6B3E48AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A5824167442958CAD690121 /* Pods-My Honest Weather.debug.xcconfig */,
+				E1B560B9BCE7E64EC30475ED /* Pods-My Honest Weather.release.xcconfig */,
+				F2577F3EFA7469EB3031B209 /* Pods-My Honest Weather-My Honest WeatherUITests.debug.xcconfig */,
+				B27CF74EC33439E659B72429 /* Pods-My Honest Weather-My Honest WeatherUITests.release.xcconfig */,
+				3D3FADB6B1ABC6FD863AF2E2 /* Pods-My Honest WeatherTests.debug.xcconfig */,
+				E547D32E87B9220F13C98482 /* Pods-My Honest WeatherTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6EC3C9627C68DD700CF51E1 = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CA127C68DD700CF51E1 /* My Honest Weather */,
+				C6EC3CB827C68DDB00CF51E1 /* My Honest WeatherTests */,
+				C6EC3CC227C68DDB00CF51E1 /* My Honest WeatherUITests */,
+				C6EC3CA027C68DD700CF51E1 /* Products */,
+				8E774FD2BDFF7A9B6B3E48AD /* Pods */,
+				128AF47EEFE6F7A0954635FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6EC3CA027C68DD700CF51E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3C9F27C68DD700CF51E1 /* My Honest Weather.app */,
+				C6EC3CB527C68DDB00CF51E1 /* My Honest WeatherTests.xctest */,
+				C6EC3CBF27C68DDB00CF51E1 /* My Honest WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6EC3CA127C68DD700CF51E1 /* My Honest Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CD927C6901000CF51E1 /* Resources */,
+				C6EC3CD827C68FDD00CF51E1 /* Delegate */,
+				C6EC3CD727C68FCE00CF51E1 /* Controller */,
+				C6EC3CD627C68FBD00CF51E1 /* Struct */,
+				C6EC3CD527C68FB700CF51E1 /* View */,
+				C6EC3CD427C68FA500CF51E1 /* Networking */,
+				C6EC3CD327C68F9E00CF51E1 /* Model */,
+				C6EC3CD227C68F9300CF51E1 /* ViewModel */,
+			);
+			path = "My Honest Weather";
+			sourceTree = "<group>";
+		};
+		C6EC3CB827C68DDB00CF51E1 /* My Honest WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CB927C68DDB00CF51E1 /* My_Honest_WeatherTests.swift */,
+			);
+			path = "My Honest WeatherTests";
+			sourceTree = "<group>";
+		};
+		C6EC3CC227C68DDB00CF51E1 /* My Honest WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CC327C68DDB00CF51E1 /* My_Honest_WeatherUITests.swift */,
+				C6EC3CC527C68DDB00CF51E1 /* My_Honest_WeatherUITestsLaunchTests.swift */,
+			);
+			path = "My Honest WeatherUITests";
+			sourceTree = "<group>";
+		};
+		C6EC3CD227C68F9300CF51E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CE027C6977700CF51E1 /* ForecastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6EC3CD327C68F9E00CF51E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CDE27C696BD00CF51E1 /* ForecastModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6EC3CD427C68FA500CF51E1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CDC27C6939200CF51E1 /* FetchForecast.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C6EC3CD527C68FB700CF51E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C64EA20627D330E2000ECCF9 /* HourlyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6EC3CD627C68FBD00CF51E1 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CDA27C6907400CF51E1 /* ForecastResponse.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		C6EC3CD727C68FCE00CF51E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CA627C68DD700CF51E1 /* ViewController.swift */,
+				C64EA20427D32EA7000ECCF9 /* ForecastController.swift */,
+				C64EA20827D34C5D000ECCF9 /* Location.gpx */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6EC3CD827C68FDD00CF51E1 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CA227C68DD700CF51E1 /* AppDelegate.swift */,
+				C6EC3CA427C68DD700CF51E1 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C6EC3CD927C6901000CF51E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC3CAD27C68DDA00CF51E1 /* LaunchScreen.storyboard */,
+				C6EC3CAB27C68DDA00CF51E1 /* Assets.xcassets */,
+				C6EC3CA827C68DD700CF51E1 /* Main.storyboard */,
+				C6EC3CB027C68DDA00CF51E1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6EC3C9E27C68DD700CF51E1 /* My Honest Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6EC3CC927C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest Weather" */;
+			buildPhases = (
+				78A52D493D4C826B0A78ADD0 /* [CP] Check Pods Manifest.lock */,
+				C6EC3C9B27C68DD700CF51E1 /* Sources */,
+				C6EC3C9C27C68DD700CF51E1 /* Frameworks */,
+				C6EC3C9D27C68DD700CF51E1 /* Resources */,
+				D5153AD52FDDD9E20FA842A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Honest Weather";
+			productName = "My Honest Weather";
+			productReference = C6EC3C9F27C68DD700CF51E1 /* My Honest Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6EC3CB427C68DDB00CF51E1 /* My Honest WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6EC3CCC27C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest WeatherTests" */;
+			buildPhases = (
+				99B897BE8878B0F1B1F9B840 /* [CP] Check Pods Manifest.lock */,
+				C6EC3CB127C68DDB00CF51E1 /* Sources */,
+				C6EC3CB227C68DDB00CF51E1 /* Frameworks */,
+				C6EC3CB327C68DDB00CF51E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6EC3CB727C68DDB00CF51E1 /* PBXTargetDependency */,
+			);
+			name = "My Honest WeatherTests";
+			productName = "My Honest WeatherTests";
+			productReference = C6EC3CB527C68DDB00CF51E1 /* My Honest WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6EC3CBE27C68DDB00CF51E1 /* My Honest WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6EC3CCF27C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest WeatherUITests" */;
+			buildPhases = (
+				124BE0AB350938E071F6244C /* [CP] Check Pods Manifest.lock */,
+				C6EC3CBB27C68DDB00CF51E1 /* Sources */,
+				C6EC3CBC27C68DDB00CF51E1 /* Frameworks */,
+				C6EC3CBD27C68DDB00CF51E1 /* Resources */,
+				9EC176C0127E8F99E6FD7241 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6EC3CC127C68DDB00CF51E1 /* PBXTargetDependency */,
+			);
+			name = "My Honest WeatherUITests";
+			productName = "My Honest WeatherUITests";
+			productReference = C6EC3CBF27C68DDB00CF51E1 /* My Honest WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6EC3C9727C68DD700CF51E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C6EC3C9E27C68DD700CF51E1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C6EC3CB427C68DDB00CF51E1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C6EC3C9E27C68DD700CF51E1;
+					};
+					C6EC3CBE27C68DDB00CF51E1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C6EC3C9E27C68DD700CF51E1;
+					};
+				};
+			};
+			buildConfigurationList = C6EC3C9A27C68DD700CF51E1 /* Build configuration list for PBXProject "My Honest Weather" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6EC3C9627C68DD700CF51E1;
+			productRefGroup = C6EC3CA027C68DD700CF51E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6EC3C9E27C68DD700CF51E1 /* My Honest Weather */,
+				C6EC3CB427C68DDB00CF51E1 /* My Honest WeatherTests */,
+				C6EC3CBE27C68DDB00CF51E1 /* My Honest WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6EC3C9D27C68DD700CF51E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EC3CAF27C68DDA00CF51E1 /* LaunchScreen.storyboard in Resources */,
+				C6EC3CAC27C68DDA00CF51E1 /* Assets.xcassets in Resources */,
+				C6EC3CAA27C68DD700CF51E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CB327C68DDB00CF51E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CBD27C68DDB00CF51E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		124BE0AB350938E071F6244C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Honest Weather-My Honest WeatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A52D493D4C826B0A78ADD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Honest Weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B897BE8878B0F1B1F9B840 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Honest WeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC176C0127E8F99E6FD7241 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather-My Honest WeatherUITests/Pods-My Honest Weather-My Honest WeatherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather-My Honest WeatherUITests/Pods-My Honest Weather-My Honest WeatherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather-My Honest WeatherUITests/Pods-My Honest Weather-My Honest WeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5153AD52FDDD9E20FA842A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather/Pods-My Honest Weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather/Pods-My Honest Weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Honest Weather/Pods-My Honest Weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6EC3C9B27C68DD700CF51E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EC3CA727C68DD700CF51E1 /* ViewController.swift in Sources */,
+				C64EA20727D330E2000ECCF9 /* HourlyTableViewCell.swift in Sources */,
+				C6EC3CA327C68DD700CF51E1 /* AppDelegate.swift in Sources */,
+				C6EC3CDD27C6939200CF51E1 /* FetchForecast.swift in Sources */,
+				C6EC3CE127C6977700CF51E1 /* ForecastViewModel.swift in Sources */,
+				C6EC3CA527C68DD700CF51E1 /* SceneDelegate.swift in Sources */,
+				C6EC3CDF27C696BD00CF51E1 /* ForecastModel.swift in Sources */,
+				C64EA20527D32EA8000ECCF9 /* ForecastController.swift in Sources */,
+				C6EC3CDB27C6907400CF51E1 /* ForecastResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CB127C68DDB00CF51E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EC3CBA27C68DDB00CF51E1 /* My_Honest_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6EC3CBB27C68DDB00CF51E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EC3CC627C68DDB00CF51E1 /* My_Honest_WeatherUITestsLaunchTests.swift in Sources */,
+				C6EC3CC427C68DDB00CF51E1 /* My_Honest_WeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6EC3CB727C68DDB00CF51E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6EC3C9E27C68DD700CF51E1 /* My Honest Weather */;
+			targetProxy = C6EC3CB627C68DDB00CF51E1 /* PBXContainerItemProxy */;
+		};
+		C6EC3CC127C68DDB00CF51E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6EC3C9E27C68DD700CF51E1 /* My Honest Weather */;
+			targetProxy = C6EC3CC027C68DDB00CF51E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6EC3CA827C68DD700CF51E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6EC3CA927C68DD700CF51E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6EC3CAD27C68DDA00CF51E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6EC3CAE27C68DDA00CF51E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6EC3CC727C68DDB00CF51E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6EC3CC827C68DDB00CF51E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6EC3CCA27C68DDB00CF51E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5824167442958CAD690121 /* Pods-My Honest Weather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B83AG4PJYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/gg/Desktop/SwiftCourse/CAPITOLO 1/Projects/My Honest Weather/My Honest Weather/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6EC3CCB27C68DDB00CF51E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B560B9BCE7E64EC30475ED /* Pods-My Honest Weather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B83AG4PJYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/gg/Desktop/SwiftCourse/CAPITOLO 1/Projects/My Honest Weather/My Honest Weather/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6EC3CCD27C68DDB00CF51E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3FADB6B1ABC6FD863AF2E2 /* Pods-My Honest WeatherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Honest Weather.app/My Honest Weather";
+			};
+			name = Debug;
+		};
+		C6EC3CCE27C68DDB00CF51E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E547D32E87B9220F13C98482 /* Pods-My Honest WeatherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Honest Weather.app/My Honest Weather";
+			};
+			name = Release;
+		};
+		C6EC3CD027C68DDB00CF51E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2577F3EFA7469EB3031B209 /* Pods-My Honest Weather-My Honest WeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Honest Weather";
+			};
+			name = Debug;
+		};
+		C6EC3CD127C68DDB00CF51E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27CF74EC33439E659B72429 /* Pods-My Honest Weather-My Honest WeatherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gleb.My-Honest-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Honest Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6EC3C9A27C68DD700CF51E1 /* Build configuration list for PBXProject "My Honest Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6EC3CC727C68DDB00CF51E1 /* Debug */,
+				C6EC3CC827C68DDB00CF51E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6EC3CC927C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6EC3CCA27C68DDB00CF51E1 /* Debug */,
+				C6EC3CCB27C68DDB00CF51E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6EC3CCC27C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6EC3CCD27C68DDB00CF51E1 /* Debug */,
+				C6EC3CCE27C68DDB00CF51E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6EC3CCF27C68DDB00CF51E1 /* Build configuration list for PBXNativeTarget "My Honest WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6EC3CD027C68DDB00CF51E1 /* Debug */,
+				C6EC3CD127C68DDB00CF51E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6EC3C9727C68DD700CF51E1 /* Project object */;
+}
