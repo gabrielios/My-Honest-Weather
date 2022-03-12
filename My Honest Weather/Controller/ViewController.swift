@@ -135,6 +135,24 @@ class ViewController: UIViewController {
         self.forecastImageView.layer.cornerRadius = self.forecastImageView.bounds.height / 2
         self.bottomContainerView.layer.cornerRadius = 20
     }
+    
+    @IBAction func searchAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Search", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addTextField(configurationHandler: { textfield in
+                           textfield.placeholder = "Type city name..."
+        })
+        
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { _ in
+            print("CiTY name: \(alert.textFields?.first?.text)")
+            if let cityName = alert.textFields?.first?.text {
+                self.forecastViewModel.dataFetch(lat: "", long: "", cityName: cityName)
+            }
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 
 
 }
@@ -147,7 +165,7 @@ extension ViewController: CLLocationManagerDelegate {
             print("AUTORISE \(manager.location?.coordinate)")
             
             if let lat = manager.location?.coordinate.latitude, let long = manager.location?.coordinate.longitude {
-            forecastViewModel.dataFetch(lat: String(lat), long: String(long))
+                forecastViewModel.dataFetch(lat: String(lat), long: String(long), cityName: nil)
             }
             break
         case .denied:

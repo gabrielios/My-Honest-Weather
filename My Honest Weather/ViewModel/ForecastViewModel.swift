@@ -12,11 +12,11 @@ import RxCocoa
 class ForecastViewModel {
     var forecastModel = ForecastModel()
     
-    func dataFetch(lat: String, long: String) {
+    func dataFetch(lat: String, long: String, cityName: String?) {
         forecastModel.forecastInfo.accept(nil)
         forecastModel.forecastError.accept(.loading)
         
-        FetchForecast.shared.fetchForecast(lat: lat, long: long, completion: { data in
+        FetchForecast.shared.fetchForecast(lat: lat, long: long, cityName: cityName, completion: { data in
             self.forecastModel.forecastInfo.accept(data)
             self.forecastModel.forecastError.accept(.success)
         }, errorState: { error in

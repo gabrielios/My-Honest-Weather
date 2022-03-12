@@ -250,6 +250,15 @@
                                 </constraints>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-bB-BjC">
+                                <rect key="frame" x="343.5" y="59" width="44.5" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6Y-uJ-pW1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -261,12 +270,14 @@
                             <constraint firstItem="4f5-yy-Mcl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TzM-wd-Khg"/>
                             <constraint firstItem="w8x-T3-tTo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Utq-hB-i7E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4f5-yy-Mcl" secondAttribute="trailing" id="giw-ws-MwV"/>
+                            <constraint firstItem="am8-bB-BjC" firstAttribute="centerY" secondItem="1WJ-ne-1rG" secondAttribute="centerY" id="h7a-rC-mcp"/>
                             <constraint firstItem="fMa-Yk-yeA" firstAttribute="top" secondItem="fnh-e2-XK3" secondAttribute="top" id="mo4-99-9ly"/>
                             <constraint firstItem="fMa-Yk-yeA" firstAttribute="centerY" secondItem="fnh-e2-XK3" secondAttribute="centerY" id="nMh-Vf-Lg0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4f5-yy-Mcl" secondAttribute="bottom" id="nRJ-dm-J8r"/>
                             <constraint firstItem="fnh-e2-XK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="qhb-IJ-8kb"/>
                             <constraint firstItem="1WJ-ne-1rG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qoP-RU-Re6"/>
                             <constraint firstItem="fnh-e2-XK3" firstAttribute="top" secondItem="1WJ-ne-1rG" secondAttribute="bottom" constant="70" id="rUG-ie-2P1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="am8-bB-BjC" secondAttribute="trailing" constant="26" id="rYb-nJ-Hh6"/>
                             <constraint firstItem="1WJ-ne-1rG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="toB-ql-9w9"/>
                         </constraints>
                     </view>
@@ -427,6 +438,7 @@
         <image name="ForecastCalendar" width="18" height="20"/>
         <image name="TodayCalendar" width="18" height="20"/>
         <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
